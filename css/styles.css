@@ -5,9 +5,97 @@
   --text-primary: #555555;
   --text-secondary: #9da4bd;
 }
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+
 body {
   font-family: 'Open Sans', sans-serif;
+  background-color: lavender;
 }
+
+/* navbar styles */
+nav {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-contacts {
+  margin-left: auto;
+}
+
+.nav-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--text-white);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+.phone-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* aside styles */
+.social-link {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.2em;
+  color: var(--secondary-color)
+
+}
+.social-link:hover {
+  color: var(--primary-color);
+}
+
+.section-description {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  color: var(--text-primary)
+}
+
+.suptitle-primary,
+.suptitle-secondary,
+{
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: var(--secondary-color)
+}
+.suptitle-secondary {
+  color: rgba(157, 164, 189, 0.6);
+}
+
 h2.section-title {
   color: var(--secondary-color)
   font-family: 'Raleway';
@@ -20,4 +108,136 @@ h2.section-title {
 h2.section-title.lighten  {
     color: var(--text-white);
 }
-12312
+
+.hero-description {
+  color: var(--text-secondary);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+}
+
+.primary-button {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--secondary-color); 
+  padding: 12px 20px;
+  border: 1px solid #FF6C00;
+  border-radius: 25px;
+  color: #fff;
+}
+
+.primary-button.darken {
+  color: var(--secondary-color);
+}
+
+/* price stiles */
+
+.price-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price-item>p,
+.price-item>span {
+    font-weight: normal;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--text-secondary);
+}
+
+
+/* why we cestion style */
+
+.number-container {
+
+}
+
+.number-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color:  #F7F7F7;
+  width: 170px;
+  height: 130px;
+}
+
+.number-box>p {
+ 
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 57px;
+  letter-spacing: 0.05em;
+  color: var(--secondary-color);
+}
+
+.number-box>span {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: var(--secondary-color);
+}
+
+/* masters styles */
+.master-list {
+  display: flex;
+}
+
+.master-card {
+  
+  width: 370px;
+  height: 500px;
+}
+
+/* gallery styles */
+
+
+
+
+/* footer styles */
+
+.contact-box,
+.contact-box>a,
+.schedule-box>p
+ {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: var(--text-secondary);
+}
+address {
+  font-style: normal;
+}
+.schedule-box>span {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+
+/* copyright styles */
+
+.copyright {
+  display: flex;
+  align-items: center;
+  }
+
+.copy-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 15px;
+  color: #9DA4BD;
+}
+
+.social-box {
+  margin-left: auto;
+}
