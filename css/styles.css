@@ -29,19 +29,45 @@ body {
 }
 
 /* navbar styles */
-nav {
+
+.header {
+  position: relative;
   display: flex;
+  height: 100vh;
+  width: 100%;
+  
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.nav-holder {
+  display: flex;
+  align-items: center;
+  padding: 0 32px;
+
+}
+.logo-img {
+  margin: 32px;
+
 }
 
 .nav-links {
   display: flex;
   align-items: center;
+  
 }
 .nav-contacts {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .nav-link {
+  margin-top: 52px;
+  margin-right: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -53,6 +79,7 @@ nav {
   color: var(--primary-color);
 }
 .phone-link {
+  margin-right: 40px;
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -62,6 +89,14 @@ nav {
 }
 
 /* aside styles */
+.sidebar {
+  min-width: 155px;
+  height: 100vh;
+}
+
+.social-box{
+  display: flex;
+}
 .social-link {
   font-style: normal;
   font-weight: 600;
@@ -73,6 +108,21 @@ nav {
 }
 .social-link:hover {
   color: var(--primary-color);
+}
+
+/* slider styles */
+
+.slider {
+  background-image: url(../images/Slider\ img\ 1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  }
+
+.section-box {
+  padding: 130px 55px;
+  width: 1280px;
 }
 
 .section-description {
@@ -133,6 +183,22 @@ h2.section-title.lighten  {
 
 .primary-button.darken {
   color: var(--secondary-color);
+}
+
+.about-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-img-box {
+  display: flex;
+  width: 48%;
+  justify-content: space-between;
+}
+
+.description-container {
+    width: 48%;
+  
 }
 
 /* price stiles */
